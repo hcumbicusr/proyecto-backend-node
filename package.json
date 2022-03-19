@@ -4,12 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node start api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -r dotenv/config api/index.js",
     "mysql": "nodemon -r dotenv/config mysql/index.js",
-    "post": "nodemon -r dotenv/config post/index.js",
-    "build": "@vercel/node api/index.js"
+    "post": "nodemon -r dotenv/config post/index.js"
   },
   "keywords": [],
   "author": "",

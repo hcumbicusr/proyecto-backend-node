@@ -1,9 +1,16 @@
 {
     "version": 2,
+    "env": {
+        "MYSQL_HOST": "localhost"
+    },
     "builds": [
         {
-            "src": "package.json",
-            "use": "@vercel/static-build"
+            "src": "api/index.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "post/index.js",
+            "use": "@vercel/node"
         }
     ],
     "routes": [
