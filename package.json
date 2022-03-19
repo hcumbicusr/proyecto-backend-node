@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -r dotenv/config api/index.js",
     "mysql": "nodemon -r dotenv/config mysql/index.js",
-    "post": "nodemon -r dotenv/config post/index.js"
+    "post": "nodemon -r dotenv/config post/index.js",
+    "cache": "nodemon -r dotenv/config cache/index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
     "nanoid": "^3.3.1",
+    "redis": "^4.0.4",
     "request": "^2.88.2",
     "swagger-ui-express": "^4.3.0"
   },
